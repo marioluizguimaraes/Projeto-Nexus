@@ -66,12 +66,14 @@
 }
 
 #cadsCursos{
+    gap: 20px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #cadsCursos>section{
-    width: 386px;
+    max-width: 386px;
     height: 320px;
     border: 1px solid var(--gray-500);
     border-radius: 6px;

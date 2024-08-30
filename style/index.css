@@ -1,0 +1,57 @@
+:root {
+    --black-900 : #09090B;
+    --black-700 : #18181B;
+    --gray-500  : #3E3E44;
+    --gray-100  : #A1A1AA;
+    --white-100 : #FAFAFA;
+    --white-200 : #797979;
+    --green-700 : #1A2E05;
+    --green-100 : #BEF264;
+}
+
+#bemVindo{
+    margin: 45px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#bemVindo>div{
+    
+    max-width: 600px;
+}
+
+#bemVindo>div>h2{
+    color: var(--green-100);
+    font-size: 40px;
+}
+
+#bemVindo>div>h2>span{
+    color: var(--black-900);
+    display: inline-block;
+    background-color: var(--white-100);
+}
+
+#bemVindo>div>.lineBottom{
+    width: 200px;
+    height: 8px;
+    margin: 16px 0;
+    border-radius: 0 20px 20px 0;
+    background-color: var(--white-100);
+}
+
+#bemVindo>div>p{
+    margin: 32px 0 45px;
+}
+#bemVindo .button{
+    color: var(--green-100);
+    border: 1px solid var(--green-100);
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 6px;
+}
+
+#bemVindo a:hover{
+    color: var(--black-900);
+    background-color: var(--green-100);
+}

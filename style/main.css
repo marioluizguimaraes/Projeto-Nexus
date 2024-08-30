@@ -18,7 +18,7 @@
 }
 
 main{
-    min-height: 100vh;
+    max-width: 1200px;
 }
 
 body{
@@ -121,4 +121,3 @@ footer .logo {
     gap: 12px;
     display: flex;
 }
-

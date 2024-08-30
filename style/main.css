@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --black-900 : #09090B;
+    --black-700 : #18181B;
+    --gray-500  : #3E3E44;
+    --gray-100  : #A1A1AA;
+    --white-100 : #FAFAFA;
+    --white-200 : #797979;
+    --green-700 : #1A2E05;
+    --green-100 : #BEF264;
+}
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    min-height: 100vh;
+}
+
+body{
+    color: var(--white-100);
+    font-family: Inter;
+    background-color: var(--black-900);
+}
+
+header{
+    font-weight: 300;
+    height: 80px;
+    margin: 14px auto;
+    border: 1px solid var(--gray-500);
+    display: flex;
+    padding: 16px;
+    max-width: 1200px;
+    align-items: center;
+    border-radius: 12px;
+    justify-content: space-between;
+    background-color: var(--black-700);
+}
+
+header #menu ul{
+    gap: 16px;
+    display: flex;
+    list-style-type: none;
+}
+
+.logo a{
+    color: var(--green-100);
+    text-decoration: none;
+}
+
+header #menu li a {
+    color: var(--white-100);
+    padding: 4px;
+    border-bottom: 1px solid #bef26400;
+    text-decoration: none;
+}
+
+header #menu li:hover a{
+    color: var(--green-100);
+    border-bottom: 1px solid #BEF264;
+}
+
+main{
+    margin: auto;
+    max-width: 1200px;
+}
+
+footer{
+    color: var(--white-100);
+    padding: 45px 0px; 
+    margin-top: 24px;
+    border-top: 1px solid var(--gray-500);
+}
+
+#container_footer{
+    margin: auto;
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+
+footer section h4{
+    padding-bottom: 5px;
+}
+
+footer section ul{
+    list-style-type: none;
+}
+
+footer section ul li{
+    padding: 5px 0;
+}
+
+footer section p{
+    margin-top: 32px;
+}
+
+section a{ 
+    color: var(--white-200);
+    text-decoration: none;
+}
+
+footer .logo a{
+    color: var(--white-100);
+    font-size: 32px;
+    padding-bottom: 12px;
+}
+footer .logo {
+    padding-bottom: 12px;
+}
+
+.media img{
+    width: 30px;
+}
+
+.social ul{ 
+    gap: 12px;
+    display: flex;
+}
+

@@ -1,0 +1,87 @@
+:root {
+    --black-900 : #09090B;
+    --black-700 : #18181B;
+    --gray-500  : #3E3E44;
+    --gray-100  : #A1A1AA;
+    --white-100 : #FAFAFA;
+    --white-200 : #797979;
+    --green-700 : #81c439;
+    --green-100 : #BEF264;
+}
+
+.login{
+    border: 1px solid var(--gray-500);
+    margin: 56px auto;
+    padding: 32px;
+    max-width: 385px;
+    border-radius: 12px;
+    background-color: var(--black-700);
+}
+
+.login img{
+    width: 64px;
+    margin: auto;
+    display: block;   
+}
+
+.login p{
+    color: var(--gray-100);
+    text-align: center;
+    font-weight: 300;
+}
+
+
+form{
+
+    margin-top: 48px;
+}
+
+form label{
+    color: var(--white-100);
+    display: block;
+    margin-bottom: 12px;
+}
+
+input:focus {
+    outline: 0;
+}
+.conect{
+    color: var(--gray-100);
+}
+
+form>div>input, form>input{
+    
+    color: var(--white-100);
+    width: 100%;
+    border: none;
+    padding: 12px;
+    display: block;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.icone{
+    height: 24px;
+}
+
+input[type=email], input[type=password]{
+    background-color: var(--gray-500);
+}
+
+input[type=checkbox] {
+    margin-top: 25px;
+    outline: 0;
+    cursor: pointer;
+}
+
+
+input[type=submit]{
+    color: var(--black-700);
+    margin-top: 32px;
+    background-color: var(--green-100);
+}
+
+input[type=submit]:hover{
+    background-color: var(--green-700);
+}

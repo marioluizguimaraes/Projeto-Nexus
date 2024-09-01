@@ -177,7 +177,8 @@ body{
     max-width: 512px;
     align-items: center;
     border-radius: 6px;
-    background-color: var(--black-700);
+    backdrop-filter: blur(25px);
+    
 }
 
 .linguagem>div h3{

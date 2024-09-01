@@ -8,10 +8,15 @@
     --green-700 : #1A2E05;
     --green-100 : #BEF264;
 }
-
+body{
+    background-image: url(../images/icones/fundoondulado.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
 .container{
     gap: 80px;
-    margin: 45px 0;
+    margin: 70px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,6 +49,7 @@
 .container>div>p{
     margin: 32px 0 45px;
 }
+
 .container .button{
     color: var(--green-100);
     border: 1px solid var(--green-100);
@@ -60,26 +66,30 @@
 #quemSomos{
     margin: 85px 0;
 }
+
 #quemSomos>div>p{
     padding: 0 0 0 20px;
     border-left: 5px solid var(--green-100);
 }
 
-#cadsCursos{
+#cardsCursos{
     gap: 20px;
+    margin: 90px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
-#cadsCursos>section{
+#cardsCursos>section{
     max-width: 386px;
     height: 320px;
     border: 1px solid var(--gray-500);
     border-radius: 6px;
     background-color: var(--black-700);
 }
-#cadsCursos .imagem{
+
+#cardsCursos .imagem{
     width: 385px;
     height: 150px;
     border-top: 1px solid var(--gray-500);
@@ -88,31 +98,36 @@
     border-radius: 6px 6px 0 0;
     background-color: var(--gray-500);
 }
-#cadsCursos>section>h3{
+
+#cardsCursos>section>h3{
     padding: 5px 13px;
 }
-#cadsCursos>section>p{
+
+#cardsCursos>section>p{
     color: var(--green-100);
     padding: 5px 13px;
     font-size: 14px;
     font-weight: 300;
 }
-#cadsCursos>section>.perfilProf{
+
+#cardsCursos>section>.perfilProf{
     gap: 8px;
     display: flex;
     padding: 13px;
     align-items: center;
 }
-#cadsCursos>section>.perfilProf p{
+
+#cardsCursos>section>.perfilProf p{
     
     padding: 3px;
 }
-#cadsCursos>section>.perfilProf .atuacao{
+
+#cardsCursos>section>.perfilProf .atuacao{
     color: var(--gray-100);
     font-weight: 300;
 }
 
-#cadsCursos>section>.perfilProf img{
+#cardsCursos>section>.perfilProf img{
     width: 40px;
     height: 40px;
     border: 1px solid var(--green-100);
@@ -120,4 +135,52 @@
     background-color: var(--gray-500);
 }
 
+.parceiros{
+    left: 0px;
+    width: 100vw;
+    height: 120px;
+    position: absolute;
+    background-color: var(--white-100);   
+}
 
+.parceiros .logotipos{
+    max-width: 1200px;
+}
+
+.linguagens{     
+    gap: 16px 30px;
+    display: flex;  
+    padding: 45px 0;
+    flex-wrap: wrap;
+    margin-top: 300px;
+    justify-content: center;
+}
+
+.linguagens>p {
+    width: 100%;
+    text-align: center;
+    color: var(--green-100);
+}
+
+.linguagens>h2 {
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.linguagem{
+    gap: 25px;
+    border: 1px solid var(--gray-500);
+    padding: 24px;
+    display: flex;
+    max-width: 512px;
+    align-items: center;
+    border-radius: 6px;
+    background-color: var(--black-700);
+}
+
+.linguagem>div h3{
+    color: var(--green-100);
+    margin-bottom: 10px;
+}

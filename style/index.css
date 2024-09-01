@@ -177,7 +177,7 @@ body{
     max-width: 512px;
     align-items: center;
     border-radius: 6px;
-    backdrop-filter: blur(25px);
+    backdrop-filter: blur(15px);
     
 }
 

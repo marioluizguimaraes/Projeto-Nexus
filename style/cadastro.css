@@ -11,7 +11,7 @@
 
 .login{
     border: 1px solid var(--gray-500);
-    margin: 56px auto;
+    margin: 32px auto;
     padding: 32px;
     max-width: 485px;
     border-radius: 12px;
@@ -46,7 +46,7 @@ form .inputs{
     background-color: var(--gray-500);
 }
 
-input[type="email"], input[type="password"] {
+input[type="email"], input[type="password"], input[type="text"], input[type="tel"], input[type="date"], select{
     color: var(--white-100);
     width: 100%;
     border: none;
@@ -55,35 +55,16 @@ input[type="email"], input[type="password"] {
     font-size: 16px;
     background-color: var(--gray-500);
 }
-#check{
-    color: var(--gray-100);
-    padding: 0;
-    background-color: transparent;
-}
-input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    appearance: none;
-    border-radius: 4px;
-    background-color: var(--gray-500);
+
+form .container{
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: space-between;
 }
 
-input[type="checkbox"]:checked {
-    position: relative;
-    border-color: var(--green-100);  
-}
-
-input[type="checkbox"]:checked::after {  
-    top: 1px; 
-    left: 6px;
-    width: 6px;
-    height: 12px;
-    border: 2px solid var(--green-100); 
-    content: '';
-    position: absolute;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
+form .container>div>.inputs{
+    max-width: 190px;
 }
 
 input[type="submit"] {   
@@ -103,10 +84,4 @@ input[type="submit"]:hover {
     height: 43px;
     transition: 100ms;
     background-color: var(--green-700);
-}
-form>a{
-    display: block;
-    margin-top: 12px ;
-    text-align: center;
-    text-decoration: underline;
 }

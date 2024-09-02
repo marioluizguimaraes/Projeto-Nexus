@@ -85,3 +85,10 @@ input[type="submit"]:hover {
     transition: 100ms;
     background-color: var(--green-700);
 }
+
+input[type="date"] {
+    appearance: none;    
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}

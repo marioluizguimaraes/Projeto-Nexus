@@ -1,0 +1,63 @@
+:root {
+    --black-900 : #09090B;
+    --black-700 : #18181B;
+    --gray-alpha: rgba(24, 24, 27, 0.985);
+    --gray-500  : #3E3E44;
+    --gray-400  : #7C7C8A;
+    --gray-100  : #A1A1AA;
+    --white-100 : #FAFAFA;
+    --white-200 : #797979;
+    --green-700 : #1A2E05;
+    --green-100 : #BEF264;
+    
+}
+
+
+
+.cards{
+    display: flex;
+    gap: 62px;
+    
+
+}
+
+.cards > div{
+   background-color: var(--black-700);
+   border-radius: 6px;
+   box-sizing: border-box;
+   padding: 1em 0.8em 1em 0.9em;
+}
+
+
+.cards > div > h2  {
+    margin-top: 21px;
+}
+
+.cards > div > h2 {
+   font-size: 20px;
+}
+.cards > div > p{
+    margin-top: 21px;
+    font-size: 16px;
+    
+}
+.cards > div > p > b , #descricao{
+    font-size: 18px;
+}
+
+#descricao{
+    font-weight: 500;
+}
+
+
+
+.cards > div > nav > ul{
+    display: flex;
+    list-style-type: none;
+    margin: 1.5em 4.5em;
+}
+
+.cards > div > nav > ul > li{
+    text-align: center;
+    margin: 10px;
+}

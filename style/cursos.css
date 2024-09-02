@@ -1,0 +1,119 @@
+:root {
+    --black-900 : #09090B;
+    --black-700 : #18181B;
+    --gray-alpha: rgba(24, 24, 27, 0.985);
+    --gray-500  : #3E3E44;
+    --gray-400  : #7C7C8A;
+    --gray-100  : #A1A1AA;
+    --white-100 : #FAFAFA;
+    --white-200 : #797979;
+    --green-700 : #1A2E05;
+    --green-100 : #BEF264;
+    
+}
+
+
+/* predefinindo as configurações do botão */
+.dropbtn {
+    background-color: var(--black-700);
+    color: var(--gray-400);
+    width: 280px;
+    height: 58px;
+    padding: 16px;
+    font-size: 16px;
+    border: 1px solid var(--gray-500);
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+/* adicionando os icones do botão */
+.icone_botao_curso{
+    margin-right: 15px;
+}
+
+
+/* não consegui deixar esses icones separados */
+.ponteiro_curso{
+    margin-left: auto;
+    display: flex;
+}
+
+
+
+/* efeito de hover no botão */
+.dropbtn:hover, .dropbtn:focus {
+    color: var(--green-100);
+    transition: 0.5s;
+
+}
+
+/* lista  */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* itens da lista */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--gray-alpha);
+    width: 280px;
+    list-style-type: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: var(--white-100);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color:var(--gray-500);
+    color: var(--green-100);
+    font-size: 17px;
+    transition: 0.2s;
+}
+  
+.show {display:block;}
+
+
+#botao_carga_horaria{
+    margin-top: 33px;
+    margin-bottom: 10px;
+}
+#botao_carga_horaria , #botao_data_de_lancamento{
+    background-color: var(--black-900);
+}
+
+
+/* colocar ponteiro do lado direito */
+.ponteiro_curso {
+    margin-left: auto; 
+}
+
+
+/* definições do botão de filtrar */
+#filtrar{
+
+        background-color: var(--green-100);
+        color: var(--black-900);
+        width: 280px;
+        height: 42px;
+        font-size: 16px;
+        border: 1px solid var(--gray-500);
+        border-radius: 6px;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+        margin-top: 31px;
+
+}

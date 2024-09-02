@@ -46,6 +46,7 @@ header #menu ul{
     gap: 16px;
     display: flex;
     list-style-type: none;
+    align-items: center;
 }
 
 .logo a{
@@ -58,6 +59,26 @@ header #menu li a {
     padding: 4px;
     border-bottom: 1px solid #bef26400;
     text-decoration: none;
+}
+
+.loginIn{
+    color: var(--black-900);
+    width: 96px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    background-color: var(--white-100);
+}
+.loginIn>span{
+    color: var(--black-900);
+    padding: 0 0 0 10px;
+    box-sizing: content-box;
+}
+
+.loginIn:hover{
+    transition: 200ms;
+    background-color: var(--green-100);
 }
 
 header #menu li:hover a{

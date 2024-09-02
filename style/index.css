@@ -82,9 +82,9 @@ body{
 }
 
 #cardsCursos>section{
-    max-width: 386px;
     height: 320px;
     border: 1px solid var(--gray-500);
+    max-width: 386px;
     border-radius: 6px;
     background-color: var(--black-700);
 }

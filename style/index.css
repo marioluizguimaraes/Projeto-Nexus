@@ -23,7 +23,6 @@ body{
 }
 
 #bemVindo>div{
-    
     max-width: 600px;
 }
 
@@ -64,9 +63,12 @@ body{
 }
 
 #quemSomos{
-    margin: 85px 0;
+    flex-wrap: wrap;
+    margin: 430px 0 0 0;
 }
-
+#quemSomos>div{
+    max-width: 600px;
+}
 #quemSomos>div>p{
     padding: 0 0 0 20px;
     border-left: 5px solid var(--green-100);
@@ -135,16 +137,29 @@ body{
     background-color: var(--gray-500);
 }
 
-.parceiros{
+.numeroros{
     left: 0px;
     width: 100vw;
-    height: 120px;
+    padding: 45px 0;
     position: absolute;
-    background-color: var(--white-100);   
+    background-image: linear-gradient(to right, var(--black-900), var(--black-700), var(--black-900));   
 }
 
-.parceiros .logotipos{
+.numeroros .estatisticas{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
     max-width: 1200px;
+    justify-content: space-between;
+}
+
+.numeroros .estatisticas>section{
+    width: 300px;
+}
+
+.numeroros .estatisticas>section>h3{
+    font-size: 32px;
+    margin: 12px 0;
 }
 
 .linguagens{     
@@ -152,7 +167,6 @@ body{
     display: flex;  
     padding: 45px 0;
     flex-wrap: wrap;
-    margin-top: 300px;
     justify-content: center;
 }
 

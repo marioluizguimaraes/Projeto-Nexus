@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus | Cursos</title> 
+    <title>Nexus | Cursos</title>
     <link rel="shortcut icon" href="./images/icones/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="style/cursos.css">
 </head>
 
 <body>
@@ -17,18 +18,109 @@
                 <li><a href="cursos.html">Cursos</a></li>
                 <li><a href="professores.html">Professores</a></li>
                 <li><a href="contato.html">Contato</a></li>
-                <li><a href="login.html" class="icone loginIn"><span>Entrar</span><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 3.5H19C19.5304 3.5 20.0391 3.71071 20.4142 4.08579C20.7893 4.46086 21 4.96957 21 5.5V19.5C21 20.0304 20.7893 20.5391 20.4142 20.9142C20.0391 21.2893 19.5304 21.5 19 21.5H15" stroke="#18181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M10 17.5L15 12.5L10 7.5" stroke="#18181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M15 12.5H3" stroke="#18181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                <li><a href="login.html" class="icone loginIn"><span>Entrar</span><svg width="24" height="25"
+                            viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 3.5H19C19.5304 3.5 20.0391 3.71071 20.4142 4.08579C20.7893 4.46086 21 4.96957 21 5.5V19.5C21 20.0304 20.7893 20.5391 20.4142 20.9142C20.0391 21.2893 19.5304 21.5 19 21.5H15"
+                                stroke="#18181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10 17.5L15 12.5L10 7.5" stroke="#18181B" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M15 12.5H3" stroke="#18181B" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
+
+        <button onclick="curso()" class="dropbtn" id="dropdownButton">
+
+            <svg class="icone_botao_curso" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 2V10L13 7L16 10V2" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path
+                    d="M4 19.5V4.5C4 3.83696 4.26339 3.20107 4.73223 2.73223C5.20107 2.26339 5.83696 2 6.5 2H19C19.2652 2 19.5196 2.10536 19.7071 2.29289C19.8946 2.48043 20 2.73478 20 3V21C20 21.2652 19.8946 21.5196 19.7071 21.7071C19.5196 21.8946 19.2652 22 19 22H6.5C5.83696 22 5.20107 21.7366 4.73223 21.2678C4.26339 20.7989 4 20.163 4 19.5ZM4 19.5C4 18.837 4.26339 18.2011 4.73223 17.7322C5.20107 17.2634 5.83696 17 6.5 17H20"
+                    stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+
+            <span id="dropdownButtonText_Cursos">Cursos</span>
+
+            <svg class="ponteiro_curso" width="14" height="8" viewBox="0 0 14 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7L13 1" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+
+        <ul id="curso" class="dropdown-content">
+            <li><a href="#" onclick="selecionar_curso('Algoritmo')">Algoritmo</a></li>
+            <li><a href="#" onclick="selecionar_curso('POO')">POO</a></li>
+            <li><a href="#" onclick="selecionar_curso('Estrutura de Dados')">Estrutura de Dados</a></li>
+            <li><a href="#" onclick="selecionar_curso('DOM')">DOM</a></li>
+            <li><a href="#" onclick="selecionar_curso('Banco de Dados')">Banco de Dados</a></li>
+        </ul>
+
+        <button onclick="carga_horaria()" class="dropbtn" id="botao_carga_horaria" id="dropdownButton">
+
+            <svg class="icone_botao_curso" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 6V12H16.5" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+
+            <span id="dropdownButtonText_Carga_Horaria">Carga Horária</span>
+            <svg class="ponteiro_curso" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7L13 1" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+
+        <ul id="carga_horaria" class="dropdown-content">
+            <li><a href="#" onclick="selecionar_carga_horaria('8 horas')">8 horas</a></li>
+            <li><a href="#" onclick="selecionar_carga_horaria('15 horas')">15 horas</a></li>
+            <li><a href="#" onclick="selecionar_carga_horaria('20 horas')">20 horas</a></li>
+            <li><a href="#" onclick="selecionar_carga_horaria('30 horas')">30 horas</a></li>
+            <li><a href="#" onclick="selecionar_carga_horaria('60 horas')">60 horas</a></li>
+        </ul>
+
+        <button onclick="data_de_lancamento()" class="dropbtn" id="botao_data_de_lancamento" id="dropdownButton">
+            <svg class="icone_botao_curso" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 2V6" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M16 2V6" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M3 10H21" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M8 14H8.01" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 14H12.01" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M16 14H16.01" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M8 18H8.01" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 18H12.01" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M16 18H16.01" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <span id="dropdownButtonText_Data_de_Lancamento">Data de Lancamento</span>
+            <svg class="ponteiro_curso" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7L13 1" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
         
+        <ul id="data_de_lancamento" class="dropdown-content">
+            <li><a href="#" onclick="selecionar_data_de_lancamento ('Próximos 10 dias')">Próximos 10 dias</a></li>
+            <li><a href="#" onclick="selecionar_data_de_lancamento ('Próximos 25 dias')">Próximos 25 dias</a></li>
+            <li><a href="#" onclick="selecionar_data_de_lancamento ('Próximos 60 dias')">Próximos 60 dias</a></li>
+            <li><a href="#" onclick="selecionar_data_de_lancamento ('Próximos 120 dias')">Próximos 120 dias</a></li>
+            <li><a href="#" onclick="selecionar_data_de_lancamento ('Próximos 180 dias')">Próximos 180 dias</a></li>
+        </ul>
+
+        <button class="dropbtn" id="filtrar">
+            Filtrar
+        </button>
+
     </main>
     <footer>
         <div id="container_footer">
@@ -81,6 +173,7 @@
             </section>
         </div>
     </footer>
+    <script src="script/cursos.js"></script>
 </body>
 
 </html>

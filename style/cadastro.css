@@ -92,3 +92,4 @@ input[type="date"] {
 input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
 }
+

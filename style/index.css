@@ -9,10 +9,11 @@
     --green-100 : #BEF264;
 }
 body{
-    background-image: url(../images/icones/fundoondulado.svg);
+    
+    background-size: cover;
+    background-image: url(../images/fundo1.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom;
+    background-position: top;
 }
 .container{
     gap: 80px;
@@ -63,8 +64,9 @@ body{
 }
 
 #quemSomos{
-    flex-wrap: wrap;
+    gap: 32px;
     margin: 430px 0 0 0;
+    flex-wrap: wrap;
 }
 #quemSomos>div{
     max-width: 600px;
@@ -154,7 +156,10 @@ body{
 }
 
 .numeroros .estatisticas>section{
-    width: 300px;
+    width: 376px;
+    border: 1px solid var(--gray-500);
+    padding: 16px 16px;
+    border-radius: 6px;
 }
 
 .numeroros .estatisticas>section>h3{

@@ -1,7 +1,6 @@
 :root {
     --black-900 : #09090B;
     --black-700 : #18181B;
-    --gray-alpha: rgba(24, 24, 27, 0.985);
     --gray-500  : #3E3E44;
     --gray-400  : #7C7C8A;
     --gray-100  : #A1A1AA;
@@ -9,55 +8,66 @@
     --white-200 : #797979;
     --green-700 : #1A2E05;
     --green-100 : #BEF264;
+    --gray-alpha: rgba(24, 24, 27, 0.985);
     
 }
-
-
-
-.cards{
+main{
     display: flex;
-    gap: 62px;
-    
-
+    flex-wrap: wrap;
+    padding-bottom: 45px;
+    justify-content: space-between;
 }
 
-.cards > div{
-   background-color: var(--black-700);
-   border-radius: 6px;
-   box-sizing: border-box;
-   padding: 1em 0.8em 1em 0.9em;
+.perfil{
+    height: 432px;
+    padding: 24px;
+    border: 1px solid var(--gray-500);
+    max-width: 358px;
+    margin-top: 180px;
+    border-radius: 12px;
+    background-color: var(--black-700);
 }
 
-
-.cards > div > h2  {
-    margin-top: 21px;
+.perfil>img, .perfil>h2, .perfil>span, .perfil>p, .perfil>ul{
+    top: -140px;
+    position: relative;
 }
 
-.cards > div > h2 {
-   font-size: 20px;
-}
-.cards > div > p{
-    margin-top: 21px;
-    font-size: 16px;
-    
-}
-.cards > div > p > b , #descricao{
-    font-size: 18px;
+.perfil>img{
+    width: 240px;
+    height: 240px;
+    border: 3px solid var(--green-100);
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+    background-color: var(--black-900);
 }
 
-#descricao{
-    font-weight: 500;
-}
-
-
-
-.cards > div > nav > ul{
-    display: flex;
-    list-style-type: none;
-    margin: 1.5em 4.5em;
-}
-
-.cards > div > nav > ul > li{
+.perfil>h2{
+    padding: 24px 0 0 0;
     text-align: center;
-    margin: 10px;
 }
+
+.perfil>span{
+    color: var(--green-100);
+    display: block;
+    padding: 0px 0 28px 0;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 24px;
+    border-bottom: 2px solid var(--gray-500);
+}
+
+.perfil>p{
+    text-align: center;
+}
+
+.perfil>ul{
+    gap: 10px;
+    display: flex;
+    padding: 32px;
+    list-style-type: none;
+    justify-content: center;
+}
+

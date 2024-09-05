@@ -80,7 +80,7 @@ body{
     justify-content: center;   
 }
 
-#cardsCursos>section{
+#cardsCursos section{
     height: 320px;
     border: 1px solid var(--gray-500);
     max-width: 386px;
@@ -89,7 +89,7 @@ body{
 }
 
 #cardsCursos .imagem{
-    width: 385px;
+    max-width: 378px;
     height: 150px;
     border-top: 1px solid var(--gray-500);
     border-left: 1px solid var(--gray-500);
@@ -98,34 +98,34 @@ body{
     background-color: var(--gray-500);
 }
 
-#cardsCursos>section>h3{
+#cardsCursos section>h3{
     padding: 5px 13px;
 }
 
-#cardsCursos>section>p{
+#cardsCursos section p{
     color: var(--green-100);
     padding: 5px 13px;
     font-size: 14px;
     font-weight: 300;
 }
 
-#cardsCursos>section>.perfilProf{
+.perfilProf{
     gap: 8px;
     display: flex;
     padding: 13px;
     align-items: center;
 }
 
-#cardsCursos>section>.perfilProf p{  
+.perfilProf p{  
     padding: 3px;
 }
 
-#cardsCursos>section>.perfilProf .atuacao{
+.perfilProf .atuacao{
     color: var(--gray-100);
     font-weight: 300;
 }
 
-#cardsCursos>section>.perfilProf img{
+.perfilProf img{
     width: 40px;
     height: 40px;
     border: 1px solid var(--green-100);
@@ -200,6 +200,13 @@ body{
 }
 
 
+swiper-slide{
+    padding: 48px 0;
+}
+
+.swiper-pagination-bullet {
+    background-color: red !important ;
+}
 @keyframes appear {
     from {
       opacity: 0;

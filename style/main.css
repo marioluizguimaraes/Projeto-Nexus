@@ -56,6 +56,7 @@ header #menu li a {
     width: 96px;
     height: 45px;
     display: flex;
+    transition: all 0.5s ease;
     align-items: center;
     border-radius: 6px;
     background-color: var(--white-100);
@@ -67,7 +68,7 @@ header #menu li a {
 }
 
 .loginIn:hover{
-    transition: 200ms;
+    transition: .25s;
     background-color: var(--green-100);
 }
 

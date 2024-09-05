@@ -204,9 +204,7 @@ swiper-slide{
     padding: 48px 0;
 }
 
-.swiper-pagination-bullet {
-    background-color: red !important ;
-}
+
 @keyframes appear {
     from {
       opacity: 0;

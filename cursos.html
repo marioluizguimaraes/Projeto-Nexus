@@ -34,93 +34,195 @@
         </nav>
     </header>
     <main>
+        <nav>
 
-        <button onclick="curso()" class="dropbtn" id="dropdownButton">
+            <button onclick="curso()" class="dropbtn" id="dropdownButton">
 
-            <svg class="icone_botao_curso" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 2V10L13 7L16 10V2" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                <path
-                    d="M4 19.5V4.5C4 3.83696 4.26339 3.20107 4.73223 2.73223C5.20107 2.26339 5.83696 2 6.5 2H19C19.2652 2 19.5196 2.10536 19.7071 2.29289C19.8946 2.48043 20 2.73478 20 3V21C20 21.2652 19.8946 21.5196 19.7071 21.7071C19.5196 21.8946 19.2652 22 19 22H6.5C5.83696 22 5.20107 21.7366 4.73223 21.2678C4.26339 20.7989 4 20.163 4 19.5ZM4 19.5C4 18.837 4.26339 18.2011 4.73223 17.7322C5.20107 17.2634 5.83696 17 6.5 17H20"
-                    stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+                <svg class="icone_botao_curso" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 2V10L13 7L16 10V2" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path
+                        d="M4 19.5V4.5C4 3.83696 4.26339 3.20107 4.73223 2.73223C5.20107 2.26339 5.83696 2 6.5 2H19C19.2652 2 19.5196 2.10536 19.7071 2.29289C19.8946 2.48043 20 2.73478 20 3V21C20 21.2652 19.8946 21.5196 19.7071 21.7071C19.5196 21.8946 19.2652 22 19 22H6.5C5.83696 22 5.20107 21.7366 4.73223 21.2678C4.26339 20.7989 4 20.163 4 19.5ZM4 19.5C4 18.837 4.26339 18.2011 4.73223 17.7322C5.20107 17.2634 5.83696 17 6.5 17H20"
+                        stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
 
 
-            <span id="dropdownButtonText_Cursos">Cursos</span>
+                <span id="dropdownButtonText_Cursos">Cursos</span>
 
-            <svg class="ponteiro_curso" width="14" height="8" viewBox="0 0 14 8" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1L7 7L13 1" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
-        </button>
+                <svg class="ponteiro_curso" width="14" height="8" viewBox="0 0 14 8" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L7 7L13 1" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
 
-        <ul id="curso" class="dropdown-content">
-            <li><a href="#" onclick="selecionar_curso('Algoritmo')">Algoritmo</a></li>
-            <li><a href="#" onclick="selecionar_curso('POO')">POO</a></li>
-            <li><a href="#" onclick="selecionar_curso('Estrutura de Dados')">Estrutura de Dados</a></li>
-            <li><a href="#" onclick="selecionar_curso('DOM')">DOM</a></li>
-            <li><a href="#" onclick="selecionar_curso('Banco de Dados')">Banco de Dados</a></li>
-        </ul>
+            <ul id="curso" class="dropdown-content">
+                <li><a href="#" onclick="selecionar_curso('Algoritmo')">Algoritmo</a></li>
+                <li><a href="#" onclick="selecionar_curso('POO')">POO</a></li>
+                <li><a href="#" onclick="selecionar_curso('Estrutura de Dados')">Estrutura de Dados</a></li>
+                <li><a href="#" onclick="selecionar_curso('DOM')">DOM</a></li>
+                <li><a href="#" onclick="selecionar_curso('Banco de Dados')">Banco de Dados</a></li>
+            </ul>
 
-        <button onclick="carga_horaria()" class="dropbtn" id="botao_carga_horaria" id="dropdownButton">
+            <button onclick="carga_horaria()" class="dropbtn" id="botao_carga_horaria" id="dropdownButton">
 
-            <svg class="icone_botao_curso" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                    stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M12 6V12H16.5" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
+                <svg class="icone_botao_curso" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                        stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12 6V12H16.5" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
 
-            <span id="dropdownButtonText_Carga_Horaria">Carga Horária</span>
-            <svg class="ponteiro_curso" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1L7 7L13 1" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-        </button>
+                <span id="dropdownButtonText_Carga_Horaria">Carga Horária</span>
+                <svg class="ponteiro_curso" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L7 7L13 1" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
 
-        <ul id="carga_horaria" class="dropdown-content">
-            <li><a href="#" onclick="selecionar_carga_horaria('8 horas')">8 horas</a></li>
-            <li><a href="#" onclick="selecionar_carga_horaria('15 horas')">15 horas</a></li>
-            <li><a href="#" onclick="selecionar_carga_horaria('20 horas')">20 horas</a></li>
-            <li><a href="#" onclick="selecionar_carga_horaria('30 horas')">30 horas</a></li>
-            <li><a href="#" onclick="selecionar_carga_horaria('60 horas')">60 horas</a></li>
-        </ul>
+            <ul id="carga_horaria" class="dropdown-content">
+                <li><a href="#" onclick="selecionar_carga_horaria('8 horas')">8 horas</a></li>
+                <li><a href="#" onclick="selecionar_carga_horaria('15 horas')">15 horas</a></li>
+                <li><a href="#" onclick="selecionar_carga_horaria('20 horas')">20 horas</a></li>
+                <li><a href="#" onclick="selecionar_carga_horaria('30 horas')">30 horas</a></li>
+                <li><a href="#" onclick="selecionar_carga_horaria('60 horas')">60 horas</a></li>
+            </ul>
 
-        <button onclick="data_de_lancamento()" class="dropbtn" id="botao_data_de_lancamento" id="dropdownButton">
-            <svg class="icone_botao_curso" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 2V6" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M16 2V6" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M3 10H21" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M8 14H8.01" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M12 14H12.01" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M16 14H16.01" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M8 18H8.01" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M12 18H12.01" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M16 18H16.01" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+            <button onclick="data_de_lancamento()" class="dropbtn" id="botao_data_de_lancamento" id="dropdownButton">
+                <svg class="icone_botao_curso" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 2V6" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16 2V6" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M3 10H21" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M8 14H8.01" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12 14H12.01" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16 14H16.01" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M8 18H8.01" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12 18H12.01" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16 18H16.01" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
 
-            <span id="dropdownButtonText_Data_de_Lancamento">Data de Lancamento</span>
-            <svg class="ponteiro_curso" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1L7 7L13 1" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-        </button>
+                <span id="dropdownButtonText_Data_de_Lancamento">Data de Lancamento</span>
+                <svg class="ponteiro_curso" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L7 7L13 1" stroke="#7C7C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            
+            <ul id="data_de_lancamento" class="dropdown-content">
+                <li><a href="#" onclick="selecionar_data_de_lancamento ('Próximos 10 dias')">Próximos 10 dias</a></li>
+                <li><a href="#" onclick="selecionar_data_de_lancamento ('Próximos 25 dias')">Próximos 25 dias</a></li>
+                <li><a href="#" onclick="selecionar_data_de_lancamento ('Próximos 60 dias')">Próximos 60 dias</a></li>
+                <li><a href="#" onclick="selecionar_data_de_lancamento ('Próximos 120 dias')">Próximos 120 dias</a></li>
+                <li><a href="#" onclick="selecionar_data_de_lancamento ('Próximos 180 dias')">Próximos 180 dias</a></li>
+            </ul>
+
+            <button class="dropbtn" id="filtrar">
+                Filtrar
+            </button>
+        </nav>
         
-        <ul id="data_de_lancamento" class="dropdown-content">
-            <li><a href="#" onclick="selecionar_data_de_lancamento ('Próximos 10 dias')">Próximos 10 dias</a></li>
-            <li><a href="#" onclick="selecionar_data_de_lancamento ('Próximos 25 dias')">Próximos 25 dias</a></li>
-            <li><a href="#" onclick="selecionar_data_de_lancamento ('Próximos 60 dias')">Próximos 60 dias</a></li>
-            <li><a href="#" onclick="selecionar_data_de_lancamento ('Próximos 120 dias')">Próximos 120 dias</a></li>
-            <li><a href="#" onclick="selecionar_data_de_lancamento ('Próximos 180 dias')">Próximos 180 dias</a></li>
-        </ul>
 
-        <button class="dropbtn" id="filtrar">
-            Filtrar
-        </button>
 
+        <section>
+            <nav>
+                <ul>
+                    <li>
+                        <button onclick="showCards('all')" class="seletores" class="active">Todos    </button>
+                        
+                    </li>
+                    <li> 
+                        <p> | </p>
+                    </li>
+                    <li>
+                        <button onclick="showCards('free')" class="seletores">Gratuito </button>
+                    </li>
+                      <li> 
+                        <p> | </p>
+                    </li>
+                    <li>
+                        <Button onclick="showCards('paid')" class="seletores"> Pago</Button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="cards">
+                
+                <div class="card paid">
+                    <img src="images/cursos/java_imagem.png" alt="" class="imagem">
+                    <h2>
+                        POO com Java
+                        <img src="images/icones/index/icone_coroa.svg" alt="icone de coroa dourada">
+                    </h2 class="p_normal">
+                    <p class="p_normal">
+                        Quer dominar o jeito mais usado pelas grandes empresas para criar sistemas robustos? A Programação Orientada a Objetos (POO) em Java é a chave para organizar e escalar seus projetos. Venha aprender e dar o próximo passo na sua carreira!  
+                    </p>
+                    <button id="btn_java" class="acessar_curso">Acessar Curso</button>
+                </div>
+                <div class="card free">
+                    <img src="images/cursos/Programação_funcional_imagem.png" alt="" class="imagem">
+                    <h2>
+                        Programação Funcional
+                        
+                    </h2>
+                    <p class="p_normal" >
+                        Quer aprender uma forma diferente de programar? Na programação funcional, você escreve códigos mais simples e previsíveis, que reduzem erros e são mais fáceis de manter. Venha descobrir como!  
+                    </p>
+                    <button id="btn_funcional" class="acessar_curso">Acessar Curso</button>
+                </div>
+                <div class="card paid">
+                    <img src="images/cursos/AI_imagem.png" alt="" class="imagem">
+                    <h2>
+                        Chatbots com IA
+                        <img src="images/icones/index/icone_coroa.svg" alt="icone de coroa dourada">
+                    </h2>
+                    <p class="p_normal">
+                        Já imaginou criar assistentes virtuais inteligentes que falam com as pessoas? Com este curso, você vai dominar o desenvolvimento de chatbots com inteligência artificial, que podem revolucionar a forma como empresas se comunicam.  
+                    </p>
+                    <button id="btn_ai" class="acessar_curso">Acessar Curso</button>
+                </div>
+                <div class="card free">
+                    <img src="images/cursos/apis 1.png" alt="" class="imagem">
+                    <h2>
+                        APIs RESTful com Python
+                    </h2>
+                    <p class="p_normal">
+                        Já pensou em criar sistemas que conversam entre si? Com Python, você vai aprender a construir APIs que conectam diferentes aplicações, tornando seus projetos em soluções eficientes e modernas.  
+                    </p>
+                    <button id="btn_apis" class="acessar_curso">Acessar Curso</button>
+                </div>
+                <div class="card free">
+                    <img src="images/cursos/mobile.png" alt="" class="imagem">
+                    <h2>
+                        Desenvolvimento Mobile com Flutter
+                        
+                    </h2>
+                    <p id="p_mobile">
+                        Que tal criar apps incríveis para Android e iOS com o mesmo código? Com Flutter, você vai aprender a desenvolver aplicativos mobile de maneira rápida e profissional!.  
+                    </p>
+                    <button id="btn_mobile" class="acessar_curso">Acessar Curso</button>
+                </div>
+
+                
+
+                
+
+                <div class="card paid">
+                    <img src="images/cursos/criptografia 1.png" alt="" class="imagem">
+                    <h2>
+                        Blockchain e Criptografia
+                        <img src="images/icones/index/icone_coroa.svg" alt="icone de coroa dourada">
+                    </h2>
+                    <p class="p_normal">
+                       Interessado em tecnologias que estão mudando o mundo? Aprenda como o blockchain está transformando a segurança digital e como a criptografia pode proteger dados e criar novas soluções para fintechs e além!  
+                    </p>
+                    <button id="btn_crip" class="acessar_curso">Acessar Curso</button>
+                </div>
+
+               
+
+            </div>
+        </section>
     </main>
     <footer>
         <div id="container_footer">
@@ -129,30 +231,20 @@
                 <ul>
                     <li>
                         <a href="#" class="media">
-                            <svg width="32" height="32" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M24.2395 10.0208H14.7603C12.1427 10.0208 10.0208 12.1427 10.0208 14.7603V24.2395C10.0208 26.8571 12.1427 28.9791 14.7603 28.9791H24.2395C26.8571 28.9791 28.9791 26.8571 28.9791 24.2395V14.7603C28.9791 12.1427 26.8571 10.0208 24.2395 10.0208Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M23.2916 18.9027C23.4086 19.6916 23.2738 20.4973 22.9065 21.2052C22.5392 21.9131 21.958 22.4872 21.2456 22.8458C20.5333 23.2043 19.726 23.3291 18.9386 23.2024C18.1512 23.0757 17.4238 22.704 16.8598 22.14C16.2959 21.5761 15.9241 20.8487 15.7974 20.0613C15.6707 19.2739 15.7955 18.4666 16.1541 17.7542C16.5126 17.0418 17.0867 16.4607 17.7946 16.0933C18.5025 15.726 19.3082 15.5913 20.0971 15.7083C20.9018 15.8276 21.6468 16.2026 22.2221 16.7778C22.7973 17.353 23.1723 18.098 23.2916 18.9027Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M24.7136 14.2864H24.7237" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <circle cx="19.5" cy="19.5" r="19" stroke="white" stroke-opacity="0.43"/>
-                            </svg>  
+                            <img src="images/icones/footer/instagram.svg" alt="icone do instagram">
                         </a>
                     </li>
                     <li>
                         <a href="#" class="media">
-                            <svg width="32" height="32" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="19.5" cy="19.5" r="19" stroke="white" stroke-opacity="0.43"/>
-                                <path d="M25 10H22C20.6739 10 19.4021 10.5268 18.4645 11.4645C17.5268 12.4021 17 13.6739 17 15V18H14V22H17V30H21V22H24L25 18H21V15C21 14.7348 21.1054 14.4804 21.2929 14.2929C21.4804 14.1054 21.7348 14 22 14H25V10Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>       
+                            <img src="images/icones/footer/facebook.svg" alt="icone do facebook">
                         </a>
                     </li>
                     <li>
                         <a href="#" class="media">
-                            <svg width="32" height="32" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="19.5" cy="19.5" r="19" stroke="white" stroke-opacity="0.43"/>
-                                <path d="M26.1125 9.07812H29.6401L21.9351 17.9073L31 29.9219H23.9031L18.3443 22.6338L11.9833 29.9219H8.45425L16.6954 20.4775L8 9.07812H15.2781L20.3021 15.7381L26.1125 9.07812ZM24.8762 27.8059H26.8313L14.2143 11.0834H12.1184L24.8762 27.8059Z" fill="white"/>
-                            </svg>
+                            <img src="images/icones/footer/twitter.svg" alt="icone do twitter">
                         </a>
                     </li>
+
                 </ul>
             </section>
             <section>
@@ -181,9 +273,9 @@
                 </ul>
                 <p>© 2024 Nexus • Todos os direitos reservados</p>
             </section>
-        </div>       
+        </div>
     </footer>
-    <script src="script/cursos.js"></script>
+    <script src="./script/cursos.js"></script>
 </body>
 
 </html>

@@ -58,3 +58,46 @@ window.onclick = function(event) {
         }
     }
 }
+
+
+       
+function showCards(category) {
+    var i;
+    var x = document.getElementsByClassName("card"); 
+    var buttons = document.querySelectorAll("button"); 
+
+    
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+
+ 
+    if (category === 'all') {
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "block";
+        }
+    } else {
+        
+        for (i = 0; i < x.length; i++) {
+            if (x[i].classList.contains(category)) {
+                x[i].style.display = "block";
+            }
+        }
+    }
+
+    
+    for (i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove("active");
+    }
+
+    
+    var clickedButton = document.querySelector(`button[onclick="showCards('${category}')"]`);
+    if (clickedButton) {
+        clickedButton.classList.add("active");
+    }
+    }
+
+    
+    document.addEventListener("DOMContentLoaded", function() {
+    showCards('all');
+});

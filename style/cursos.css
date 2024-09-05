@@ -1,6 +1,8 @@
 :root {
     --black-900 : #09090B;
     --black-700 : #18181B;
+    --gray-alpha: rgba(24, 24, 27, 0.985);
+    --gray-900  : #27272A;
     --gray-500  : #3E3E44;
     --gray-400  : #7C7C8A;
     --gray-100  : #A1A1AA;
@@ -8,10 +10,13 @@
     --white-200 : #797979;
     --green-700 : #1A2E05;
     --green-100 : #BEF264;
-    --gray-alpha: rgba(24, 24, 27, 0.985);   
+    
 }
 
+main > nav{
+    margin: 70px 0;
 
+}
 /* predefinindo as configurações do botão */
 .dropbtn {
     background-color: var(--black-700);
@@ -26,6 +31,7 @@
     display: flex;
     justify-content: space-between; 
     align-items: center; 
+    
 }
 /* adicionando os icones do botão */
 .icone_botao_curso{
@@ -115,4 +121,165 @@
         text-align: center; 
         margin-top: 31px;
 
+}
+
+main{
+    display: flex;
+}
+
+/* predefinições da section */
+main > section{
+    background-color:var(--black-700) ;
+    padding-bottom:  2em ;
+    border-radius: 6px;
+    max-width: 906px;
+
+    align-items: center; 
+    margin: 70px 0 0 14px;
+    margin-bottom: 70px;
+    
+
+
+
+
+}
+
+/* Container dos CARDS */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 22px;
+    align-items: center; 
+    margin-top: 50px;
+    padding: 0 2em;
+    
+
+
+}
+.cards > div  {
+    width:  266px ;
+    /* 414 */
+    background-color: var(--gray-900);
+    padding: 0.8em;
+    border-radius: 6px;
+    box-sizing: border-box;
+    
+}
+/* Predefinições das IMAGEns do CURSO */
+
+.imagem {
+  width: 239px;
+  height: 159px;
+  border-radius: 10px;
+  border: var(--black-700) 1px solid;
+  
+  
+}
+/* Predefinições do cards individuais */
+
+
+
+/* formatação dos TÍTULOS CARDS */
+
+.cards > div > h2{
+    font-size: 16px;
+    margin-top: 10px ;
+}
+
+
+/* Formatação Tamanho da Cora */
+.cards > div > h2 > img{
+    width: 16px;
+    height: 16px;
+}
+
+
+/* formatação dos PARÁGRAFOS CARDS */
+.cards > div > .p_normal {
+    font-size: 14px;
+    margin-top: 18px ;
+    font-weight: 200;
+}
+#p_mobile{
+    font-size: 14px;
+    font-weight: 200;
+}
+
+
+/* configuração do botão de ter acesso ao curso */
+.cards > div > .acessar_curso{
+    background-color: var(--green-100);
+    width: 119px;
+    height: 32px;
+    border: none;
+    font-size: 12px;
+    border: 1px solid var(--gray-500);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#btn_funcional{
+    margin-top: 34px;
+}
+#btn_java , #btn_crip{
+    margin-top: 15px;
+}
+#btn_ai{
+    margin-top: 15px;
+}
+
+#btn_apis{
+    margin-top: 35px;
+}
+
+#btn_mobile{
+    margin-top: 50px;
+
+}
+
+
+/* navegação filtro */
+section > nav {
+    background-color: var(--black-900);
+    max-width: 274px;
+    height: 52px;
+    padding: 1em;
+    border-radius: 12px;
+    margin: 12px auto;
+    
+}
+
+/* UL dos botões dos filtros */
+section > nav > ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    background-color: var(--black-900);
+
+}
+
+/* definição da cor do botão dos filtros */
+section > nav > ul > li{
+    color: var(--gray-100);
+    
+}
+
+/* botão de filtro */
+.seletores{
+    background-color: var(--black-900);
+    border: none;
+    font-size: 16px;
+    color: var(--gray-100);
+    cursor: pointer;
+    
+   
+}
+
+
+/* formtação do botão já ativado */
+.seletores.active{
+    color: var(--green-100);
+    font-size: 18px;
+    transition: 0.12s;
 }

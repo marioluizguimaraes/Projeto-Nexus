@@ -1,16 +1,5 @@
-:root {
-    --black-900 : #09090B;
-    --black-700 : #18181B;
-    --gray-500  : #3E3E44;
-    --gray-400  : #7C7C8A;
-    --gray-100  : #A1A1AA;
-    --white-100 : #FAFAFA;
-    --white-200 : #797979;
-    --green-700 : #1A2E05;
-    --green-100 : #BEF264;
-    --gray-alpha: rgba(24, 24, 27, 0.985);
-    
-}
+@import url(paleta.css);
+
 main{
     display: flex;
     flex-wrap: wrap;

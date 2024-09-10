@@ -199,20 +199,21 @@ footer .logo a{
     }
   }
 
-
-
 @media screen and (max-width: 630px) {
+    header{
+        gap: 24px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
     #sanduiche{
         display: block;
     }
+
     #menu{
         display: none;
     }
-    header{
-        gap: 24px;
-        flex-wrap: wrap;
-        height: auto;
-    }
+
     .open{
     display: block;
     transition: .25s;

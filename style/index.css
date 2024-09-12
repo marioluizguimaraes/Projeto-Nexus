@@ -8,7 +8,6 @@ body{
 }
 
 .container{
-    gap: 80px;
     margin: 70px 0;
     display: flex;
     align-items: center;
@@ -37,10 +36,12 @@ body{
     background-color: var(--green-100);
 }
 
-
 #bemVindo div{
     max-width: 600px;
+
 }
+
+
 
 #bemVindo div h2 span{
     color: var(--black-900);
@@ -73,7 +74,7 @@ body{
 }
 
 .numeroros div section{
-    width: 376px;
+    max-width: 376px;
     border: 1px solid var(--gray-500);
     padding: 16px 16px;
     border-radius: 6px;
@@ -230,3 +231,4 @@ swiper-slide{
         margin: auto;
     }
 }
+

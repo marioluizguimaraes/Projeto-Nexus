@@ -18,25 +18,51 @@
                 <li><a href="cursos.html">Cursos</a></li>
                 <li><a href="professores.html">Professores</a></li>
                 <li><a href="contato.html">Contato</a></li>
-                <li>
-                    <a href="login.html" class="icone loginIn"><span>Entrar</span>
-                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 3.5H19C19.5304 3.5 20.0391 3.71071 20.4142 4.08579C20.7893 4.46086 21 4.96957 21 5.5V19.5C21 20.0304 20.7893 20.5391 20.4142 20.9142C20.0391 21.2893 19.5304 21.5 19 21.5H15" stroke="#18181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M10 17.5L15 12.5L10 7.5" stroke="#18181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M15 12.5H3" stroke="#18181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <li><a href="login.html" class="icone loginIn"><span>Entrar</span><svg width="24" height="25"
+                            viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 3.5H19C19.5304 3.5 20.0391 3.71071 20.4142 4.08579C20.7893 4.46086 21 4.96957 21 5.5V19.5C21 20.0304 20.7893 20.5391 20.4142 20.9142C20.0391 21.2893 19.5304 21.5 19 21.5H15"
+                                stroke="#18181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10 17.5L15 12.5L10 7.5" stroke="#18181B" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M15 12.5H3" stroke="#18181B" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
                         </svg>
                     </a>
                 </li>
             </ul>
         </nav>
-    </header>   
+        <button onclick="menu()" id="sanduiche"><img class="icon" src="images/icones/menu/Icone_sanduiche.svg" alt=""></button>
+        <nav id="" class="menu-mobile">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="professores.html">Professores</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li id="entrar"><a href="login.html" class="loginIn"><span>Entrar<svg width="24" height="25"
+                            viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 3.5H19C19.5304 3.5 20.0391 3.71071 20.4142 4.08579C20.7893 4.46086 21 4.96957 21 5.5V19.5C21 20.0304 20.7893 20.5391 20.4142 20.9142C20.0391 21.2893 19.5304 21.5 19 21.5H15"
+                                stroke="#18181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10 17.5L15 12.5L10 7.5" stroke="#18181B" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M15 12.5H3" stroke="#18181B" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"/>
+                        </svg>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+    </header> 
     <main>
         <section class="perfil" id="prof1">
             <img src="images/professores/prof1.png" alt="">
-            <h2>Nome Sobrenome</h2>
+            <h2>Gabriel Azevedo</h2>
             <span>Eng. de computação</span>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                Trabalhou em grandes empresas de tecnologia, como a Microsoft e a IBM, desenvolvendo soluções de inteligência artificial e machine learning.
             </p>
             <ul>
                 <li>
@@ -71,10 +97,10 @@
         </section>
         <section class="perfil" id="prof2">
             <img src="images/professores/prof2.png" alt="">
-            <h2>Nome Sobrenome</h2>
-            <span>Eng. de computação</span>
+            <h2>João Pedro Almeida</h2>
+            <span>Cientista da Computação</span>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                Desenvolvedor sênior no Google e na Microsoft, onde fez contribuições significativas para projetos inovadores e revolucionárias para computação.
             </p>
             <ul>
                 <li>
@@ -109,10 +135,10 @@
         </section>
         <section class="perfil" id="prof3">
             <img src="images/professores/prof3.png" alt="">
-            <h2>Nome Sobrenome</h2>
+            <h2>Ana Luiza Santos</h2>
             <span>Eng. de computação</span>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                Trabalhou em empresas renomadas como IBM e Tesla, onde liderou equipes de desenvolvimento em projetos em equipe com +200 devs.
             </p>
             <ul>
                 <li>
@@ -147,10 +173,10 @@
         </section>
         <section class="perfil" id="prof4">
             <img src="images/professores/prof4.png" alt="">
-            <h2>Nome Sobrenome</h2>
-            <span>Eng. de computação</span>
+            <h2>Lucas Ferreira</h2>
+            <span>Cientista de Software</span>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                Com uma carreira que inclui passagens por empresas de prestígio como Amazon e Salesforce, tendo um dos nomes mais renomados na área de computação.
             </p>
             <ul>
                 <li>
@@ -185,11 +211,10 @@
         </section>
         <section class="perfil" id="prof5">
             <img src="images/professores/prof5.png" alt="">
-            <h2>Nome Sobrenome</h2>
-            <span>Eng. de computação</span>
+            <h2>Ravi Patel</h2>
+            <span>Cientista da Computação</span>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-            </p>
+                Trabalhou em empresas de ponta como Infosys e Adobe, onde contribuiu significativamente para projetos de software inovadores.
             <ul>
                 <li>
                     <a href="#">
@@ -322,6 +347,7 @@
             </section>
         </div>       
     </footer>
+    <script src="script/menuMobile.js"></script>
 </body>
 
 </html>

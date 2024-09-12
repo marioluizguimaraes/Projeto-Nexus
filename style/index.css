@@ -1,7 +1,6 @@
 @import url(paleta.css);
 
-body{
-    
+body{   
     background-size: cover;
     background-image: url(../images/background/background_4.png);
     background-repeat: no-repeat;
@@ -16,12 +15,12 @@ body{
     justify-content: space-between;
 }
 
-.container>div>h2{
+.container>div h2{
     color: var(--green-100);
     font-size: 40px;
 }
 
-.container>div>p{
+.container>div p{
     margin: 32px 0 45px;
 }
 
@@ -39,17 +38,17 @@ body{
 }
 
 
-#bemVindo>div{
+#bemVindo div{
     max-width: 600px;
 }
 
-#bemVindo>div>h2>span{
+#bemVindo div h2 span{
     color: var(--black-900);
     display: inline-block;
     background-color: var(--white-100);
 }
 
-#bemVindo>div>.lineBottom{
+#bemVindo div .lineBottom{
     width: 200px;
     height: 8px;
     margin: 16px 0;
@@ -63,11 +62,11 @@ body{
     flex-wrap: wrap;
 }
 
-#quemSomos>div{
+#quemSomos div{
     max-width: 600px;
 }
 
-#quemSomos>div>p{
+#quemSomos div p{
     padding: 0 0 0 20px;
     border-left: 5px solid var(--green-100);
 }
@@ -98,7 +97,7 @@ body{
     background-color: var(--gray-500);
 }
 
-#cardsCursos section>h3{
+#cardsCursos section h3{
     padding: 5px 13px;
 }
 
@@ -141,22 +140,23 @@ body{
     background-image: linear-gradient(to right, var(--black-900), var(--black-700), var(--black-900));   
 }
 
-.numeroros .estatisticas{
+.numeroros div{
     margin: auto;
+    
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
     justify-content: space-between;
 }
 
-.numeroros .estatisticas>section{
+.numeroros div section{
     width: 376px;
     border: 1px solid var(--gray-500);
     padding: 16px 16px;
     border-radius: 6px;
 }
 
-.numeroros .estatisticas>section>h3{
+.numeroros div section h3{
     margin: 12px 0;
     font-size: 32px;
 }
@@ -169,16 +169,18 @@ body{
     justify-content: center;
 }
 
-.linguagens>p {
+.linguagens>h2 {
     width: 100%;
     color: var(--green-100);
     text-align: center;
+    font-weight: 400;
 }
 
-.linguagens>h2 {
+.linguagens>p {
     width: 100%;
     font-size: 40px;
     text-align: center;
+    font-weight: 700;
     margin-bottom: 75px;
 }
 
@@ -194,7 +196,7 @@ body{
     
 }
 
-.linguagem>div h3{
+.linguagem div h3{
     color: var(--green-100);
     margin-bottom: 10px;
 }

@@ -130,6 +130,7 @@ main{
 #container_footer{
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     max-width: 1200px;
     justify-content: space-between;
 }
@@ -221,4 +222,13 @@ footer .logo a{
     display: block;
     transition: .25s;
 }
+}
+
+@media screen and (max-width: 480px) {
+    #container_footer{
+        gap: 32px;
+        padding: 0 12px;
+        flex-direction: column;
+    }
+    
 }

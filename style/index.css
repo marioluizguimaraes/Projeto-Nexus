@@ -7,6 +7,8 @@ body{
     background-position: top;
 }
 
+/*----------------------------------------------------------*/
+
 .container{
     margin: 70px 0;
     display: flex;
@@ -36,6 +38,8 @@ body{
     background-color: var(--green-100);
 }
 
+/*----------------------------------------------------------*/
+
 #bemVindo div{
     max-width: 600px;
 
@@ -55,6 +59,8 @@ body{
     background-color: var(--white-100);
 }
 
+/*----------------------------------------------------------*/
+
 .numeroros{
     left: 0px;
     width: 100vw;
@@ -64,6 +70,7 @@ body{
 }
 
 .numeroros div{
+    gap: 12px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -72,9 +79,10 @@ body{
 }
 
 .numeroros div section{
-    max-width: 376px;
+    width: clamp(300px, 376px, 376px);
     border: 1px solid var(--gray-500);
     padding: 16px 16px;
+    flex-grow: 4;
     border-radius: 6px;
 }
 
@@ -83,9 +91,12 @@ body{
     font-size: 32px;
 }
 
+/*----------------------------------------------------------*/
+
 #quemSomos{
     gap: 32px;
     margin: 430px 0 0 0;
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -93,10 +104,16 @@ body{
     max-width: 600px;
 }
 
+#quemSomos div figure{
+    display: none;
+}
+
 #quemSomos div p{
     padding: 0 0 0 20px;
     border-left: 5px solid var(--green-100);
 }
+
+/*----------------------------------------------------------*/
 
 .cardsCursos{
     gap: 20px;
@@ -159,6 +176,8 @@ body{
     background-color: var(--gray-500);
 }
 
+/*----------------------------------------------------------*/
+
 .linguagens{     
     gap: 16px 30px;
     display: flex;  
@@ -199,8 +218,30 @@ body{
     margin-bottom: 10px;
 }
 
+/*----------------------------------------------------------*/
+
 swiper-slide{
     padding: 48px 0;
+}
+
+@media screen and (max-width: 1150px) {
+    #quemSomos{   
+        margin: 600px 0 0 0;     
+    }
+    .numeroros div{
+        padding: 0 12px;
+    }
+
+}
+
+@media screen and (max-width: 1005px) {
+    #quemSomos picture {   
+        display: none;  
+    }
+
+    #quemSomos div figure{   
+        display: block;  
+    }
 }
 
 @media screen and (min-width: 825px){
@@ -218,6 +259,28 @@ swiper-slide{
     }
 }
 
+@media screen and (max-width: 800px) {
+    #quemSomos{   
+        margin: 630px 0 0 0;     
+    }
+}
+
+@media screen and (max-width: 760px) {
+    #quemSomos picture {   
+        display: none;  
+    }
+    #quemSomos div figure{   
+        display: block;  
+    }
+    #quemSomos{ 
+        margin: 750px 0 0 0;  
+    }
+
+    #bemVindo picture{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 555px){
     #slide-desktop, #slide-tablet{
         display: none;
@@ -228,5 +291,9 @@ swiper-slide{
     .cardsCursos{
         margin: auto;
     }
+    #quemSomos{ 
+        margin: 850px 0 0 0;  
+    }
+
 }
 

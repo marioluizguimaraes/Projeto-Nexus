@@ -147,8 +147,10 @@ main > section{
 .cards > div  {
     width:  266px ;
     /* 414 */
-    background-color: var(--gray-900);
-    padding: 0.8em;
+
+    background-color: var(--gray-300);
+    padding: 0.85em;
+
     border-radius: 6px;
     box-sizing: border-box;
     
@@ -204,6 +206,7 @@ main > section{
     border: 1px solid var(--gray-500);
     border-radius: 6px;
     cursor: pointer;
+
 }
 
 #btn_funcional{
@@ -215,6 +218,7 @@ main > section{
 #btn_ai{
     margin-top: 15px;
 }
+
 
 #btn_apis{
     margin-top: 35px;
@@ -269,4 +273,30 @@ section > nav > ul > li{
     color: var(--green-100);
     font-size: 18px;
     transition: 0.12s;
+}
+
+@media screen and (max-width: 630px) {
+    main{
+        display: inline-block;
+
+    }
+    main > nav > .dropbtn{
+      margin: 10px auto;
+        
+    }
+
+    main > section{
+        margin: 0;
+        display: inline-block;
+
+    }
+    section > nav {
+        margin: 30px auto;
+       
+    }
+
+    .cards > div{
+      margin: 10px auto;
+
+    }
 }
